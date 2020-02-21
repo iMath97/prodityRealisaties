@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>realisaties</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide one">
+                <section>
+                    <h2>Titel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, error.</p>
+                </section>
+            </div>
+            <div class="swiper-slide two">
+                <section>
+                    <h2>Titel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </section>
+            </div>
+            <div class="swiper-slide three">
+                <section>
+                    <h2>Titel</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo cupiditate hic ut?</p>
+                </section>
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+    
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>  
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+      
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })
+        </script>
+</body>
+</html>
